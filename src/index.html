@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>QuakDrop 🦆</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🦆 QuakDrop 🦆</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label>Datei auswählen:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Hochladen</button>
+    </form>
 
+    <script>
+        const duckCount = 20;
+        for (let i = 0; i < duckCount; i++) {
+            let duck = document.createElement("div");
+            duck.classList.add("duck");
+            duck.style.top = Math.random() * 100 + "vh";
+            duck.style.left = "-" + Math.random() * 100 + "vw";
+            duck.style.animationDelay = (Math.random() * 10) + "s";
+            duck.innerText = "🦆";
+            document.body.appendChild(duck);
+        }
+    </script>
+</body>
+</html>

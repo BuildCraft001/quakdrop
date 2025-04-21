@@ -1,0 +1,86 @@
+body {
+    background-color: #f0f8ff;
+    font-family: "Arial", cursive, sans-serif;
+    text-align: center;
+    padding: 2em;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #2c3e50;
+}
+
+form {
+    background-color: #ffffffaa;
+    border: 2px dashed #00aced;
+    padding: 2em;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+input[type="file"],
+button {
+    font-size: 1.2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #00aced;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0077aa;
+}
+
+/* 🦆 Fliegende Enten */
+.duck {
+    font-size: 2em;
+    position: absolute;
+    animation: fly 12s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+}
+
+.qrcode-container {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.qrcode-container img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #00aced;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(-100vw) translateY(0vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw) translateY(-30vh) rotate(360deg);
+        opacity: 0;
+    }
+}
