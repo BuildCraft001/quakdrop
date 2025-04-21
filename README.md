@@ -20,6 +20,8 @@
 - **Backend**: PHP  
 - **Datenbank**: MySQL  
 
+---
+
 ## 🦆 Danksagung
 
 Ein großes Dankeschön geht raus an alle Enten dieser Welt, die uns täglich zeigen, wie man effizient kommuniziert – laut, schnell und schnörkellos. Ohne euch wäre QuakDrop niemals möglich gewesen.
