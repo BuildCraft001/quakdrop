@@ -10,9 +10,6 @@ while ($row = $stmt->fetch()) {
     
     if (file_exists($fullPath)) {
         unlink($fullPath);
-        file_put_contents(__DIR__ . '/cronlog.txt', "Deleted: $fullPath\n", FILE_APPEND);
-    } else {
-        file_put_contents(__DIR__ . '/cronlog.txt', "Not found: $fullPath\n", FILE_APPEND);
     }
 }
 
