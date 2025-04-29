@@ -1,9 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     background-color: #f0f8ff;
     font-family: "Arial", cursive, sans-serif;
     text-align: center;
     padding: 2em;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -42,7 +51,6 @@ button:hover {
     background-color: #0077aa;
 }
 
-/* 🦆 Fliegende Enten */
 .duck {
     font-size: 2em;
     position: absolute;
@@ -83,4 +91,32 @@ button:hover {
         transform: translateX(100vw) translateY(-30vh) rotate(360deg);
         opacity: 0;
     }
+}
+
+.site-footer {
+    margin-top: auto;
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    margin-left: -2em;
+    margin-right: -2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+
+}
+
+.site-footer a {
+    color: #00aced;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.site-footer a:hover {
+    color: #0077aa;
+    text-decoration: underline;
 }
